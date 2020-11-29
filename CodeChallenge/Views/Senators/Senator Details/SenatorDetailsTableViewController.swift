@@ -15,6 +15,7 @@ class SenatorDetailsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+        setupNavigationBar()
         setupTableHeaderView()
         registerCells()
     }
@@ -25,6 +26,15 @@ class SenatorDetailsTableViewController: UITableViewController {
     }
 
     // MARK: - Methods
+    func setupNavigationBar() {
+        navigationController?.navigationBar.topItem?.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: self, action: nil)
+        navigationController?.navigationBar.topItem?.backBarButtonItem?.tintColor = .black
+        navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
+        navigationController?.navigationBar.shadowImage = UIImage()
+        navigationController?.navigationBar.isTranslucent = true
+        navigationController?.view.backgroundColor = .clear
+    }
+
     func setupTableHeaderView() {
         let senatorDetailsHeader = SenatorDetailsHeader(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 450))
         senatorDetailsHeader.senator = viewModel.senator
