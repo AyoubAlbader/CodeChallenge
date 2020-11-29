@@ -32,7 +32,7 @@ class SenatorDetailsHeader: UIView {
     private let senatorImage: UIImageView = {
         let imageView = UIImageView(image: UIImage(named: ""))
         imageView.contentMode = .scaleAspectFit
-        imageView.layer.cornerRadius = 5
+        imageView.layer.cornerRadius = 10
         imageView.clipsToBounds = true
         imageView.layer.masksToBounds = true
         return imageView

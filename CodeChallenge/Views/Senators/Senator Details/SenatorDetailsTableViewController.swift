@@ -62,6 +62,7 @@ extension SenatorDetailsTableViewController {
         cell?.titleLabel.text = viewModel.cellTitle(for: indexPath.row)
         cell?.informationLabel.text = viewModel.cellInformation(for: indexPath.row)
         cell?.backgroundColor = .clear
+        cell?.selectionStyle = .none
         return cell!
     }
 

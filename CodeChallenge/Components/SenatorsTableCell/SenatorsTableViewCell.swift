@@ -27,7 +27,7 @@ class SenatorsTableViewCell: UITableViewCell {
     private let cardView: UIView = {
         let view = UIView()
         view.backgroundColor = UIColor(hexString: "#ffffff")
-        view.layer.cornerRadius = 5
+        view.layer.cornerRadius = 10
         view.layer.masksToBounds = true
         view.layer.borderWidth = 0.5
         view.layer.borderColor = UIColor.black.withAlphaComponent(0.1).cgColor
