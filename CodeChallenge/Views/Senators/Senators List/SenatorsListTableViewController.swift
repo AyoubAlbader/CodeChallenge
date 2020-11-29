@@ -15,6 +15,7 @@ class SenatorsListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
+        tableView.backgroundColor = UIColor(hexString: "#fbfbfd")
         tableView.separatorStyle = .none
     }
 
@@ -44,6 +45,7 @@ extension SenatorsListTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SenatorsTableViewCell", for: indexPath) as? SenatorsTableViewCell
         cell?.senator = viewModel.senators.objects[indexPath.row]
         cell?.selectionStyle = .none
+        cell?.backgroundColor = .clear
         return cell!
     }
 }

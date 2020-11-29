@@ -11,7 +11,7 @@ class SenatorDetailsTableViewCell: UITableViewCell {
 
     let titleLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
+        label.textColor = UIColor(hexString: "#b7b5c1")
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .left
         label.numberOfLines = 0
@@ -20,8 +20,8 @@ class SenatorDetailsTableViewCell: UITableViewCell {
 
     let informationLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = UIColor(hexString: "#8b8da1")
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label

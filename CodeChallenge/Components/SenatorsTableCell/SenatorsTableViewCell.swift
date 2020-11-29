@@ -36,7 +36,7 @@ class SenatorsTableViewCell: UITableViewCell {
 
     private let senatorNameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
+        label.textColor = UIColor(hexString: "#8b8da1")
         label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .left
         return label
@@ -45,8 +45,8 @@ class SenatorsTableViewCell: UITableViewCell {
 
     private let senatorPartyLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = UIColor(hexString: "#8b8da1")
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .left
         label.numberOfLines = 0
         return label
@@ -54,7 +54,7 @@ class SenatorsTableViewCell: UITableViewCell {
 
     private let senatorDescriptionLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
+        label.textColor = UIColor(hexString: "#b7b5c1")
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .left
         label.numberOfLines = 0

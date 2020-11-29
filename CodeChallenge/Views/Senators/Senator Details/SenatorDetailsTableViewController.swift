@@ -15,6 +15,7 @@ class SenatorDetailsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.separatorStyle = .none
+        tableView.backgroundColor = UIColor(hexString: "#fbfbfd")
         setupNavigationBar()
         setupTableHeaderView()
         registerCells()
@@ -36,7 +37,7 @@ class SenatorDetailsTableViewController: UITableViewController {
     }
 
     func setupTableHeaderView() {
-        let senatorDetailsHeader = SenatorDetailsHeader(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 450))
+        let senatorDetailsHeader = SenatorDetailsHeader(frame: CGRect(x: 0, y: 0, width: tableView.frame.width, height: 400))
         senatorDetailsHeader.senator = viewModel.senator
         tableView.tableHeaderView = senatorDetailsHeader
     }
@@ -60,6 +61,7 @@ extension SenatorDetailsTableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SenatorDetailsTableViewCell", for: indexPath) as? SenatorDetailsTableViewCell
         cell?.titleLabel.text = viewModel.cellTitle(for: indexPath.row)
         cell?.informationLabel.text = viewModel.cellInformation(for: indexPath.row)
+        cell?.backgroundColor = .clear
         return cell!
     }
 

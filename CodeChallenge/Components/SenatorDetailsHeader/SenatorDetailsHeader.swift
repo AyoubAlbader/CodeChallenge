@@ -40,15 +40,15 @@ class SenatorDetailsHeader: UIView {
 
     private let senatorNameLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
-        label.font = UIFont.boldSystemFont(ofSize: 16)
+        label.textColor = UIColor(hexString: "#8b8da1")
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textAlignment = .center
         return label
     }()
 
     private let senatorLinkLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
+        label.textColor = UIColor(hexString: "#b7b5c1")
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -58,7 +58,7 @@ class SenatorDetailsHeader: UIView {
     private let bioGuideIdLabel: UILabel = {
         let label = UILabel()
         label.text = "Bio Guide Id"
-        label.textColor = UIColor.gray
+        label.textColor = UIColor(hexString: "#b7b5c1")
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -67,8 +67,8 @@ class SenatorDetailsHeader: UIView {
 
     private let bioIdLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = UIColor(hexString: "#8b8da1")
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -77,7 +77,7 @@ class SenatorDetailsHeader: UIView {
     private let partyValueLabel: UILabel = {
         let label = UILabel()
         label.text = "Party"
-        label.textColor = UIColor.gray
+        label.textColor = UIColor(hexString: "#b7b5c1")
         label.font = UIFont.systemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
@@ -86,8 +86,8 @@ class SenatorDetailsHeader: UIView {
 
     private let partyLabel: UILabel = {
         let label = UILabel()
-        label.textColor = UIColor.gray
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.textColor = UIColor(hexString: "#8b8da1")
+        label.font = UIFont.boldSystemFont(ofSize: 16)
         label.textAlignment = .center
         label.numberOfLines = 0
         return label
@@ -137,7 +137,7 @@ class SenatorDetailsHeader: UIView {
         cardView.anchor(left: leftAnchor, bottom: bottomAnchor, right: rightAnchor,
                         paddingTop: 0, paddingLeft: 20, paddingBottom: 10, paddingRight: 20,
                         paddingCenterX: 0, paddingCenterY: 0,
-                        width: 0, height: 400, enableInsets: false)
+                        width: 0, height: 350, enableInsets: false)
 
 
         senatorImage.anchor(top: cardView.topAnchor, centerX: cardView.centerXAnchor,
@@ -153,9 +153,9 @@ class SenatorDetailsHeader: UIView {
                              width: 0, height: 0,
                              enableInsets: false)
 
-        senatorLinkLabel.anchor(top: senatorNameLabel.topAnchor, left: cardView.leftAnchor, right: cardView.rightAnchor,
+        senatorLinkLabel.anchor(top: senatorNameLabel.bottomAnchor, left: cardView.leftAnchor, right: cardView.rightAnchor,
                                      centerX: cardView.centerXAnchor,
-                                     paddingTop: 20, paddingLeft: 20,
+                                     paddingTop: 10, paddingLeft: 20,
                                      paddingBottom: 0, paddingRight: 20,
                                      paddingCenterX: 0, paddingCenterY: 0,
                                      width: 0, height: 0,
