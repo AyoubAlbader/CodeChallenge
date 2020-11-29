@@ -32,6 +32,13 @@ class SenatorsCoordinatorViewModel {
     
 }
 
+// MARK: - Responders
+extension SenatorsCoordinatorViewModel: SenatorsListDelegate {
+    func didSelectSenator(senator: Objects) {
+        
+    }
+}
+
 // MARK: - Load Data
 extension SenatorsCoordinatorViewModel {
     func loadUSSenators() {

@@ -23,3 +23,10 @@ class SenatorsListTableViewModel {
     }
 
 }
+
+// MARK: - Table view builder
+extension SenatorsListTableViewModel {
+    var numberOfRows: Int {
+        return senators.objects.count
+    }
+}

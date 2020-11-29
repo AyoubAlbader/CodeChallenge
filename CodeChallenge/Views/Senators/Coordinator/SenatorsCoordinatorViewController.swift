@@ -32,6 +32,9 @@ extension SenatorsCoordinatorViewController: SenatorsCoordinatorDelegate {
 // MARK: - Screen Presentation
 extension SenatorsCoordinatorViewController {
     func presentSenatorsList(senators: Senators) {
-        
+        let senatorsListTableViewController = SenatorsListTableViewController(style: .plain)
+        senatorsListTableViewController.viewModel = SenatorsListTableViewModel(senators: senators,
+                                                                               senatorsListDelegate: viewModel)
+        pushViewController(senatorsListTableViewController, animated: true)
     }
 }

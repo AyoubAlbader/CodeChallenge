@@ -17,6 +17,9 @@
 		13B0578C2574069700CE77D0 /* SenatorsCoordinatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B0578B2574069700CE77D0 /* SenatorsCoordinatorViewModel.swift */; };
 		13B05792257408BD00CE77D0 /* SenatorsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B05791257408BD00CE77D0 /* SenatorsListTableViewController.swift */; };
 		13B057962574091400CE77D0 /* SenatorsListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B057952574091400CE77D0 /* SenatorsListTableViewModel.swift */; };
+		13B0579A25740A9E00CE77D0 /* SenatorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B0579925740A9E00CE77D0 /* SenatorsTableViewCell.swift */; };
+		13B0579F25740B3D00CE77D0 /* UIVIew+anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B0579E25740B3D00CE77D0 /* UIVIew+anchor.swift */; };
+		13B057A425740BA200CE77D0 /* UIColor+hexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B057A325740BA200CE77D0 /* UIColor+hexString.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,9 @@
 		13B0578B2574069700CE77D0 /* SenatorsCoordinatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorsCoordinatorViewModel.swift; sourceTree = "<group>"; };
 		13B05791257408BD00CE77D0 /* SenatorsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorsListTableViewController.swift; sourceTree = "<group>"; };
 		13B057952574091400CE77D0 /* SenatorsListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorsListTableViewModel.swift; sourceTree = "<group>"; };
+		13B0579925740A9E00CE77D0 /* SenatorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorsTableViewCell.swift; sourceTree = "<group>"; };
+		13B0579E25740B3D00CE77D0 /* UIVIew+anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+anchor.swift"; sourceTree = "<group>"; };
+		13B057A325740BA200CE77D0 /* UIColor+hexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hexString.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +74,7 @@
 				13B0577A257403C300CE77D0 /* Model */,
 				13B0577B257403CB00CE77D0 /* Views */,
 				13B0577C257403D900CE77D0 /* Components */,
+				13B0579D25740B2400CE77D0 /* Extensions */,
 				13B0577D257403E100CE77D0 /* Resources */,
 			);
 			path = CodeChallenge;
@@ -101,6 +108,7 @@
 		13B0577C257403D900CE77D0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				13B0579825740A8200CE77D0 /* SenatorsTableCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -141,6 +149,23 @@
 				13B057952574091400CE77D0 /* SenatorsListTableViewModel.swift */,
 			);
 			path = "Senators List";
+			sourceTree = "<group>";
+		};
+		13B0579825740A8200CE77D0 /* SenatorsTableCell */ = {
+			isa = PBXGroup;
+			children = (
+				13B0579925740A9E00CE77D0 /* SenatorsTableViewCell.swift */,
+			);
+			path = SenatorsTableCell;
+			sourceTree = "<group>";
+		};
+		13B0579D25740B2400CE77D0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				13B0579E25740B3D00CE77D0 /* UIVIew+anchor.swift */,
+				13B057A325740BA200CE77D0 /* UIColor+hexString.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,10 +238,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				13B0579A25740A9E00CE77D0 /* SenatorsTableViewCell.swift in Sources */,
 				13B05792257408BD00CE77D0 /* SenatorsListTableViewController.swift in Sources */,
 				13B0578C2574069700CE77D0 /* SenatorsCoordinatorViewModel.swift in Sources */,
+				13B0579F25740B3D00CE77D0 /* UIVIew+anchor.swift in Sources */,
 				13B057882574066F00CE77D0 /* SenatorsCoordinatorViewController.swift in Sources */,
 				13B057632574033C00CE77D0 /* AppDelegate.swift in Sources */,
+				13B057A425740BA200CE77D0 /* UIColor+hexString.swift in Sources */,
 				13B057832574047E00CE77D0 /* Senators.swift in Sources */,
 				13B057652574033C00CE77D0 /* SceneDelegate.swift in Sources */,
 				13B057962574091400CE77D0 /* SenatorsListTableViewModel.swift in Sources */,
