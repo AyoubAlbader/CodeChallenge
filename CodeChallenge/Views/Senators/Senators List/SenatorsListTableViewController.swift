@@ -15,8 +15,12 @@ class SenatorsListTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         registerCells()
-        navigationController?.setNavigationBarHidden(true, animated: true)
         tableView.separatorStyle = .none
+    }
+
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.setNavigationBarHidden(true, animated: true)
     }
 
     // Methods
@@ -39,6 +43,15 @@ extension SenatorsListTableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "SenatorsTableViewCell", for: indexPath) as? SenatorsTableViewCell
         cell?.senator = viewModel.senators.objects[indexPath.row]
+        cell?.selectionStyle = .none
         return cell!
+    }
+}
+
+// MARK: - Table view delegate
+extension SenatorsListTableViewController {
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        viewModel.didSelectRow(at: indexPath.row)
     }
 }

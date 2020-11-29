@@ -9,6 +9,7 @@ import Foundation
 
 enum SenatorsView {
     case senatorsList(with: Senators)
+    case senatorDetails(for: Objects)
 }
 
 protocol SenatorsCoordinatorDelegate {
@@ -35,7 +36,7 @@ class SenatorsCoordinatorViewModel {
 // MARK: - Responders
 extension SenatorsCoordinatorViewModel: SenatorsListDelegate {
     func didSelectSenator(senator: Objects) {
-        
+        senatorsCoordinatorDelegate.changeView(to: .senatorDetails(for: senator))
     }
 }
 

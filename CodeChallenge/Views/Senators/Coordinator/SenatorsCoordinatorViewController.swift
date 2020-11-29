@@ -25,6 +25,8 @@ extension SenatorsCoordinatorViewController: SenatorsCoordinatorDelegate {
         switch senatorsView {
         case .senatorsList(let senators):
             presentSenatorsList(senators: senators)
+        case .senatorDetails(let senator):
+            presentSenatorDetails(senator: senator)
         }
     }
 }
@@ -36,5 +38,11 @@ extension SenatorsCoordinatorViewController {
         senatorsListTableViewController.viewModel = SenatorsListTableViewModel(senators: senators,
                                                                                senatorsListDelegate: viewModel)
         pushViewController(senatorsListTableViewController, animated: true)
+    }
+
+    func presentSenatorDetails(senator: Objects) {
+        let senatorDetailsTableViewController = SenatorDetailsTableViewController(style: .plain)
+        senatorDetailsTableViewController.viewModel = SenatorDetailsViewModel(senator: senator)
+        pushViewController(senatorDetailsTableViewController, animated: true)
     }
 }

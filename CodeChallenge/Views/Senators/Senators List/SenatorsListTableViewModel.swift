@@ -22,6 +22,10 @@ class SenatorsListTableViewModel {
         self.senatorsListDelegate = senatorsListDelegate
     }
 
+    func didSelectRow(at index: Int) {
+        senatorsListDelegate.didSelectSenator(senator: senators.objects[index])
+    }
+
 }
 
 // MARK: - Table view builder

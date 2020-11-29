@@ -20,6 +20,10 @@
 		13B0579A25740A9E00CE77D0 /* SenatorsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B0579925740A9E00CE77D0 /* SenatorsTableViewCell.swift */; };
 		13B0579F25740B3D00CE77D0 /* UIVIew+anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B0579E25740B3D00CE77D0 /* UIVIew+anchor.swift */; };
 		13B057A425740BA200CE77D0 /* UIColor+hexString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B057A325740BA200CE77D0 /* UIColor+hexString.swift */; };
+		13B057A825740FD600CE77D0 /* SenatorDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B057A725740FD600CE77D0 /* SenatorDetailsTableViewController.swift */; };
+		13B057AC2574102200CE77D0 /* SenatorDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B057AB2574102200CE77D0 /* SenatorDetailsViewModel.swift */; };
+		13B057B02574115000CE77D0 /* SenatorDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B057AF2574115000CE77D0 /* SenatorDetailsHeader.swift */; };
+		13B057B425741A0700CE77D0 /* SenatorDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13B057B325741A0700CE77D0 /* SenatorDetailsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		13B0579925740A9E00CE77D0 /* SenatorsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorsTableViewCell.swift; sourceTree = "<group>"; };
 		13B0579E25740B3D00CE77D0 /* UIVIew+anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIVIew+anchor.swift"; sourceTree = "<group>"; };
 		13B057A325740BA200CE77D0 /* UIColor+hexString.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+hexString.swift"; sourceTree = "<group>"; };
+		13B057A725740FD600CE77D0 /* SenatorDetailsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorDetailsTableViewController.swift; sourceTree = "<group>"; };
+		13B057AB2574102200CE77D0 /* SenatorDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorDetailsViewModel.swift; sourceTree = "<group>"; };
+		13B057AF2574115000CE77D0 /* SenatorDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorDetailsHeader.swift; sourceTree = "<group>"; };
+		13B057B325741A0700CE77D0 /* SenatorDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenatorDetailsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,7 +116,9 @@
 		13B0577C257403D900CE77D0 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				13B057AE2574113500CE77D0 /* SenatorDetailsHeader */,
 				13B0579825740A8200CE77D0 /* SenatorsTableCell */,
+				13B057B2257419ED00CE77D0 /* SenatorDetailsCell */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -129,6 +139,7 @@
 			children = (
 				13B057862574063C00CE77D0 /* Coordinator */,
 				13B05790257408A800CE77D0 /* Senators List */,
+				13B057A625740FBD00CE77D0 /* Senator Details */,
 			);
 			path = Senators;
 			sourceTree = "<group>";
@@ -166,6 +177,31 @@
 				13B057A325740BA200CE77D0 /* UIColor+hexString.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		13B057A625740FBD00CE77D0 /* Senator Details */ = {
+			isa = PBXGroup;
+			children = (
+				13B057A725740FD600CE77D0 /* SenatorDetailsTableViewController.swift */,
+				13B057AB2574102200CE77D0 /* SenatorDetailsViewModel.swift */,
+			);
+			path = "Senator Details";
+			sourceTree = "<group>";
+		};
+		13B057AE2574113500CE77D0 /* SenatorDetailsHeader */ = {
+			isa = PBXGroup;
+			children = (
+				13B057AF2574115000CE77D0 /* SenatorDetailsHeader.swift */,
+			);
+			path = SenatorDetailsHeader;
+			sourceTree = "<group>";
+		};
+		13B057B2257419ED00CE77D0 /* SenatorDetailsCell */ = {
+			isa = PBXGroup;
+			children = (
+				13B057B325741A0700CE77D0 /* SenatorDetailsTableViewCell.swift */,
+			);
+			path = SenatorDetailsCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,11 +279,15 @@
 				13B0578C2574069700CE77D0 /* SenatorsCoordinatorViewModel.swift in Sources */,
 				13B0579F25740B3D00CE77D0 /* UIVIew+anchor.swift in Sources */,
 				13B057882574066F00CE77D0 /* SenatorsCoordinatorViewController.swift in Sources */,
+				13B057B02574115000CE77D0 /* SenatorDetailsHeader.swift in Sources */,
 				13B057632574033C00CE77D0 /* AppDelegate.swift in Sources */,
+				13B057B425741A0700CE77D0 /* SenatorDetailsTableViewCell.swift in Sources */,
 				13B057A425740BA200CE77D0 /* UIColor+hexString.swift in Sources */,
 				13B057832574047E00CE77D0 /* Senators.swift in Sources */,
 				13B057652574033C00CE77D0 /* SceneDelegate.swift in Sources */,
 				13B057962574091400CE77D0 /* SenatorsListTableViewModel.swift in Sources */,
+				13B057AC2574102200CE77D0 /* SenatorDetailsViewModel.swift in Sources */,
+				13B057A825740FD600CE77D0 /* SenatorDetailsTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
